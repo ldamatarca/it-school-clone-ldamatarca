@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clonă ITSchool</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+  </head>
+  <body>
+    <header class="w-100">
+      <nav class="navbar navbar-expand-lg navbar-dark itschool-bg-primary">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              src="https://www.itschool.ro/img/logo-white.png"
+              alt="Logo ITSchool"
+            />
+          </a>
+          <button
+            class="navbar-toggler text-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="./pages/courses.html"
+                >
+                  Cursuri online
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  aria-current="page"
+                  href="file:///C:/Users/leona/Desktop/siteitschool/pages/about.html"
+                  id="dropdown-ITSchool"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Despre noi
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-dark"
+                  aria-labelledby="dropdown-ITSchool"
+                >
+                  <li><a class="dropdown-item" href="#">IT School</a></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="file:///C:/Users/leona/Desktop/siteitschool/pages/about.html"
+                    >
+                      Despre noi
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Sectiunea "Welcome Banner" -->
+      <section
+        class="welcome-banner itschool-bg-primary d-flex align-items-center"
+      >
+        <div class="container">
+          <h1 class="text-white fw-bold">Bine ai venit!</h1>
+          <h5 class="text-white">
+            Accelerator de cariere in
+            <span class="itschool-text-primary">{</span>
+            web development
+            <span class="itschool-text-primary">}</span>
+          </h5>
+          <div class="welcome-banner-certificate d-md-flex">
+            <h5 class="text-white">
+              Cursuri IT pentru incepatori cu certificare
+            </h5>
+            <img
+              class="ms-0 ms-md-4 mt-3 mt-md-0 d-block d-md-inline"
+              src="https://www.itschool.ro/temp/L-micro.png"
+              alt="micro"
+            />
+            <img
+              class="ms-0 ms-md-4 mt-3 mt-md-0 d-block d-md-inline"
+              src="https://www.itschool.ro/temp/L-adobe.png"
+              alt="adobe"
+            />
+            <img
+              class="ms-0 ms-md-4 mt-3 mt-md-0 d-block d-md-inline"
+              src="https://www.itschool.ro/temp/L-apple.png"
+              alt="apple"
+            />
+            <img
+              class="ms-0 ms-md-4 mt-3 mt-md-0 d-block d-md-inline"
+              src="https://www.itschool.ro/temp/siglame.png"
+              alt="sig"
+            />
+          </div>
+          <button
+            type="button"
+            class="itschool-btn-succes btn btn-success text-uppercase text-white px-5 py-3 mt-4 d-none d-md-inline"
+          >
+            Afla mai multe
+          </button>
+        </div>
+      </section>
+      <!-- Sectiunea Cursuri -->
+      <section class="courses-calendar pb-5">
+        <h2 class="py-4 text-center fw-bold">Calendar cursuri</h2>
+        <div class="container">
+          <div class="row g-3">
+            <div class="col-xs-12 col-md-6 col-lg-4">
+              <div class="card">
+                <div class="card-body pb-1">
+                  <h5 class="card-title">Python</h5>
+                  <div class="container-fluid p-0 my-4">
+                    <div class="row g-0">
+                      <div class="col-3">
+                        <div class="courses-calendar-card-icon-text">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-calendar-event"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"
+                            />
+                            <path
+                              d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"
+                            />
+                          </svg>
+                          In curand
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div
+                          class="courses-calendar-card-icon-text itschool-bg-orange"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-geo-alt-fill"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                            />
+                          </svg>
+                          Online
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="mb-0" />
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+              <div class="card">
+                <div class="card-body pb-1">
+                  <h5 class="card-title">Web development</h5>
+                  <div class="container-fluid p-0 my-4">
+                    <div class="row g-0">
+                      <div class="col-3">
+                        <div class="courses-calendar-card-icon-text">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-calendar-event"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"
+                            />
+                            <path
+                              d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"
+                            />
+                          </svg>
+                          In curand
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div
+                          class="courses-calendar-card-icon-text itschool-bg-orange"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-geo-alt-fill"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                            />
+                          </svg>
+                          Online
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="mb-0" />
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+              <div class="card">
+                <div class="card-body pb-1">
+                  <h5 class="card-title">Introducere in IT</h5>
+                  <div class="container-fluid p-0 my-4">
+                    <div class="row g-0">
+                      <div class="col-3">
+                        <div class="courses-calendar-card-icon-text">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-calendar-event"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"
+                            />
+                            <path
+                              d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"
+                            />
+                          </svg>
+                          In curand
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div
+                          class="courses-calendar-card-icon-text itschool-bg-orange"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-geo-alt-fill"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                            />
+                          </svg>
+                          Online
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="mb-0" />
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+              <div class="card">
+                <div class="card-body pb-1">
+                  <h5 class="card-title">Programare C++</h5>
+                  <div class="container-fluid p-0 my-4">
+                    <div class="row g-0">
+                      <div class="col-3">
+                        <div class="courses-calendar-card-icon-text">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-calendar-event"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"
+                            />
+                            <path
+                              d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"
+                            />
+                          </svg>
+                          In curand
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div
+                          class="courses-calendar-card-icon-text itschool-bg-orange"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-geo-alt-fill"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                            />
+                          </svg>
+                          Online
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="mb-0" />
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+              <div class="card">
+                <div class="card-body pb-1">
+                  <h5 class="card-title">Programare Java</h5>
+                  <div class="container-fluid p-0 my-4">
+                    <div class="row g-0">
+                      <div class="col-3">
+                        <div class="courses-calendar-card-icon-text">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-calendar-event"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"
+                            />
+                            <path
+                              d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"
+                            />
+                          </svg>
+                          In curand
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div
+                          class="courses-calendar-card-icon-text itschool-bg-orange"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-geo-alt-fill"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                            />
+                          </svg>
+                          Online
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="mb-0" />
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+              <div class="card">
+                <div class="card-body pb-1">
+                  <h5 class="card-title">Graphic design</h5>
+                  <div class="container-fluid p-0 my-4">
+                    <div class="row g-0">
+                      <div class="col-3">
+                        <div class="courses-calendar-card-icon-text">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-calendar-event"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"
+                            />
+                            <path
+                              d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"
+                            />
+                          </svg>
+                          In curand
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div
+                          class="courses-calendar-card-icon-text itschool-bg-orange"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-geo-alt-fill"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                            />
+                          </svg>
+                          Online
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="mb-0" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Sectiunea "Ce este It school?" -->
+      <section class="it-school itschool-bg-secondary pb-5">
+        <div class="container">
+          <h2 class="py-4 text-center fw-bold">Ce este itschool?</h2>
+          <p class="text-center">
+            IT School este o comunitate educațională de IT, locul unde
+            pasionații acestui domeniu se întâlnesc cu viitorii profesioniști.
+            Timp de peste 7 ani, am construit alături de trainerii IT School un
+            mediu de învățare specializat pentru toți cei care își doresc să
+            descopere oportunitățile acestui domeniu. Ești pregătit să faci
+            parte din comunitatea IT School?
+          </p>
+          <div class="row g-3">
+            <div class="col-12 col-md-6 col-lg-4">
+              <img
+                src="https://www.itschool.ro/temp/itschool-3.jpg"
+                alt="1"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <img
+                src="https://www.itschool.ro/temp/web3.jpg"
+                alt="2"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <img
+                src="https://www.itschool.ro/temp/itschool-1.jpg"
+                alt="3"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <img
+                src="https://www.itschool.ro/temp/itschool-6.jpg"
+                alt="4"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <img
+                src="https://www.itschool.ro/temp/itschool-5.jpg"
+                alt="5"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <img
+                src="https://www.itschool.ro/temp/itschool-2.jpg"
+                alt="6"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Sectiunea Parteneri -->
+      <section class="partners">
+        <div class="container">
+          <h2 class="py-4 text-center fw-bold">Parteneri</h2>
+          <div class="partners-container">
+            <div class="image-wrapper">
+              <img
+                src="https://www.itschool.ro/img/parteneri/homepage/toluna.png"
+                alt="Toluna"
+              />
+            </div>
+            <div class="image-wrapper">
+              <img
+                src="https://www.itschool.ro/img/parteneri/homepage/123formbuilder.png"
+                alt="123formbuilder"
+              />
+            </div>
+            <div class="image-wrapper">
+              <img
+                src="https://www.itschool.ro/img/parteneri/homepage/nagarro.png"
+                alt="Nagarro"
+              />
+            </div>
+            <div class="image-wrapper">
+              <img
+                src="https://www.itschool.ro/img/parteneri/homepage/sv.png"
+                alt="SoftVision"
+              />
+            </div>
+            <div class="image-wrapper">
+              <img
+                src="https://www.itschool.ro/img/parteneri/homepage/dreamproduction.png"
+                alt="Dream Production"
+              />
+            </div>
+            <div class="image-wrapper">
+              <img
+                src="https://www.itschool.ro/img/parteneri/homepage/ness.png"
+                alt="Ness"
+              />
+            </div>
+            <div class="image-wrapper">
+              <img
+                src="https://www.itschool.ro/img/parteneri/homepage/instapage.png"
+                alt="Instapage"
+              />
+            </div>
+            <div class="image-wrapper">
+              <img
+                src="https://www.itschool.ro/img/parteneri/homepage/amdaris.png"
+                alt="Amadaris"
+              />
+            </div>
+            <div class="image-wrapper">
+              <img
+                src="https://www.itschool.ro/img/parteneri/homepage/fortech.png"
+                alt="Fortech"
+              />
+            </div>
+            <div class="image-wrapper">
+              <img
+                src="https://www.itschool.ro/img/parteneri/homepage/visma.png"
+                alt="Visma"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container p-3">
+        <p class="text-center text-white">
+          IT School România © 2021. Toate drepturile rezervate
+        </p>
+      </div>
+    </footer>
+    <!-- Aici este javascript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+:root {
+  --text-primary: #101d42;
+  --text-secondary: #fbb44c;
+  --text-dark: #2b2922;
+  --text-light: #eaeaea;
+  --text-white: #ffffff;
+  --bg-primary: #141e4c;
+  --bg-secondary: #dfedf5;
+  --bg-dark: #101d42;
+  --bg-light: #ffffff;
+  --button-color: #2bb686;
+
+  --spacing-xl: 2.625rem;
+  --spacing-large: 1.75rem;
+  --spacing-medium: 1rem;
+  --spacing-small: 0.5rem;
+  --spacing-tiny: 0.25rem;
+  --mobile-logo-height: 45px;
+}
+
+header {
+  position: fixed;
+  z-index: 1;
+}
+
+.itschool-bg-primary {
+  background-color: var(--bg-primary);
+}
+
+.itschool-text-primary {
+  color: var(--text-secondary);
+}
+
+.itschool-text-default {
+  color: var(--text-primary);
+}
+.itschool-bg-light {
+  background-color: var(--bg-light);
+}
+
+nav .navbar-brand img {
+  height: 60px;
+  width: auto;
+}
+
+nav .navbar-nav .nav-item .nav-link,
+nav .navbar-nav .dropdown-item {
+  text-transform: uppercase;
+  color: var(--text-light);
+}
+
+nav .navbar-nav .nav-item .nav-link:hover,
+nav .navbar-nav .dropdown-item:hover {
+  color: var(--text-secondary);
+  background-color: transparent;
+}
+
+nav .navbar-nav .dropdown-menu {
+  background-color: var(--bg-dark);
+}
+
+.itschool-btn-succes {
+  background-color: var(--button-color);
+  border: 3px solid var(--button-color);
+  transition: all 0.25s ease-in-out;
+  font-size: 10px;
+}
+.itschool-bg-orange {
+  background-color: var(--text-secondary);
+}
+
+.itschool-bg-secondary {
+  background-color: var(--bg-secondary);
+}
+.itschool-btn-succes:hover {
+  background-color: transparent;
+  transition: all 0.25s ease-in-out;
+}
+nav .navbar-toggler {
+  border: 0;
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+nav .navbar-toggler svg {
+  transform: scale(1.5);
+}
+nav .navbar-collapse {
+  background-color: var(--bg-dark);
+}
+/* @media screen and (max-width: 768px) {
+  nav .navbar-collapse
+  
+} */
+footer {
+  background-color: var(--bg-primary);
+}
+
+footer p {
+  font-size: var(--fs-small);
+  text-align: center;
+  color: var(--text-light);
+  padding: var(--spacing-medium) 0;
+  margin-bottom: 0;
+}

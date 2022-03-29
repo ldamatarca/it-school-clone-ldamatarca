@@ -1,0 +1,56 @@
+.welcome {
+  height: 50vh;
+}
+body {
+  background-color: brown;
+}
+.card-title {
+  font-size: 1.5rem;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.microsoft-logo {
+  width: 100px;
+  height: auto;
+  vertical-align: middle;
+}
+.details {
+  display: flex;
+}
+.courses-calendar-card-icon-text {
+  margin-right: 5px;
+}
+.programe {
+  max-width: 1200px;
+  min-width: 320px;
+  margin: auto;
+}
+
+.card-body {
+  padding: var(--spacing-small);
+}
+
+.btn_detalii {
+  font-size: var(--fs-medium);
+  text-align: center;
+  color: var(--text-white);
+  background-color: var(--button-color);
+  border: 1px solid var(--button-color);
+  border-radius: 5px;
+  padding: var(--spacing-tiny);
+  width: 100px;
+  margin-left: 8px;
+  margin-bottom: 15px;
+}
+.col-12 {
+  padding-right: var(--spacing-small);
+  padding-left: var(--spacing-small);
+}
+.primul-card {
+  margin-left: 8px;
+}
